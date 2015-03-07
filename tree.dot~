@@ -1,0 +1,10 @@
+digraph G {
+graph [ordering="out"]
+0 [label="AAAAA" pos="4.800000,1.000000!"]
+1 [label="DDDDD" pos="1.000000,0.000000!"]
+2 [label="BBBBBBBBBBBBBBBBBBBBBBB" pos="3.800000,0.000000!"]
+3 [label="CCCCC" pos="8.600000,0.000000!"]
+0->1;
+0->2;
+0->3;
+}

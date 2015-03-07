@@ -1,0 +1,26 @@
+'/home/aram/.opam/4.02.1/bin/ocamlc.opt' '-g' '-a' '-o' '_obuild/arboviz_lib/arboviz_lib.cma' '_obuild/arboviz_lib/Util.cmo' '_obuild/arboviz_lib/MyQueue.cmo' '_obuild/arboviz_lib/Tree.cmo' '_obuild/arboviz_lib/Options.cmo' 
+'/home/aram/.opam/4.02.1/bin/ocamlopt.opt' '-g' '-a' '-o' 'src/arboviz_lib.cmxa' '_obuild/arboviz_lib/Util.cmx' '_obuild/arboviz_lib/MyQueue.cmx' '_obuild/arboviz_lib/Tree.cmx' '_obuild/arboviz_lib/Options.cmx' 
+'/home/aram/.opam/4.02.1/bin/ocamlc.opt' '-g' '-a' '-o' '_obuild/util_frontend/util_frontend.cma' '_obuild/util_frontend/UtilFrontend.cmo' 
+'/home/aram/.opam/4.02.1/bin/ocamlopt.opt' '-g' '-a' '-o' 'src/frontends/util_frontend.cmxa' '_obuild/util_frontend/UtilFrontend.cmx' 
+'/home/aram/.opam/4.02.1/bin/ocamlc.opt' '-g' '-a' '-o' '_obuild/arb_frontend/arb_frontend.cma' '_obuild/arb_frontend/ArbParser.cmo' '_obuild/arb_frontend/ArbLexer.cmo' '_obuild/arb_frontend/ArbFrontend.cmo' 
+'/home/aram/.opam/4.02.1/bin/ocamlopt.opt' '-g' '-a' '-o' 'src/frontends/arb/arb_frontend.cmxa' '_obuild/arb_frontend/ArbParser.cmx' '_obuild/arb_frontend/ArbLexer.cmx' '_obuild/arb_frontend/ArbFrontend.cmx' 
+mv src/arboviz_lib.cmxa _obuild/arboviz_lib/arboviz_lib.cmxa
+mv src/arboviz_lib.a _obuild/arboviz_lib/arboviz_lib.a
+'/home/aram/.opam/4.02.1/bin/ocamlc.opt' '-g' '-a' '-o' '_obuild/dot_frontend/dot_frontend.cma' '_obuild/dot_frontend/DotParser.cmo' '_obuild/dot_frontend/DotLexer.cmo' '_obuild/dot_frontend/DotFrontend.cmo' 
+'/home/aram/.opam/4.02.1/bin/ocamlopt.opt' '-g' '-a' '-o' 'src/frontends/dot/dot_frontend.cmxa' '_obuild/dot_frontend/DotParser.cmx' '_obuild/dot_frontend/DotLexer.cmx' '_obuild/dot_frontend/DotFrontend.cmx' 
+mv src/frontends/util_frontend.cmxa _obuild/util_frontend/util_frontend.cmxa
+mv src/frontends/util_frontend.a _obuild/util_frontend/util_frontend.a
+'/home/aram/.opam/4.02.1/bin/ocamlc.opt' '-g' '-a' '-o' '_obuild/dot_backend/dot_backend.cma' '_obuild/dot_backend/DotBackend.cmo' 
+mv src/frontends/arb/arb_frontend.cmxa _obuild/arb_frontend/arb_frontend.cmxa
+mv src/frontends/arb/arb_frontend.a _obuild/arb_frontend/arb_frontend.a
+'/home/aram/.opam/4.02.1/bin/ocamlopt.opt' '-g' '-a' '-o' 'src/backends/dot/dot_backend.cmxa' '_obuild/dot_backend/DotBackend.cmx' 
+'/home/aram/.opam/4.02.1/bin/ocamlc.opt' '-g' '-a' '-o' '_obuild/svg_backend/svg_backend.cma' '_obuild/svg_backend/SvgBackend.cmo' 
+'/home/aram/.opam/4.02.1/bin/ocamlopt.opt' '-g' '-a' '-o' 'src/backends/svg/svg_backend.cmxa' '_obuild/svg_backend/SvgBackend.cmx' 
+mv src/frontends/dot/dot_frontend.cmxa _obuild/dot_frontend/dot_frontend.cmxa
+mv src/frontends/dot/dot_frontend.a _obuild/dot_frontend/dot_frontend.a
+'/home/aram/.opam/4.02.1/bin/ocamlc.opt' '-g' '-o' '_obuild/arboviz/arboviz.byte' '-I' './_obuild/arboviz' '-I' './src' '-I' './_obuild/backends' '-I' './src/backends' '-I' './_obuild/svg_backend' '-I' './src/backends/svg' '-I' './_obuild/dot_backend' '-I' './src/backends/dot' '-I' './_obuild/util_backend' '-I' './_obuild/frontends' '-I' './src/frontends' '-I' './_obuild/dot_frontend' '-I' './src/frontends/dot' '-I' './_obuild/arb_frontend' '-I' './src/frontends/arb' '-I' './_obuild/util_frontend' '-I' './_obuild/arboviz_lib' '-g' 'arboviz_lib.cma' '-g' 'util_frontend.cma' '-g' 'arb_frontend.cma' '-g' 'dot_frontend.cma' '-g' '-g' 'util_backend.cma' '-g' 'dot_backend.cma' '-g' 'svg_backend.cma' '-g' '_obuild/arboviz/Arboviz.cmo' 
+mv src/backends/dot/dot_backend.cmxa _obuild/dot_backend/dot_backend.cmxa
+mv src/backends/dot/dot_backend.a _obuild/dot_backend/dot_backend.a
+mv src/backends/svg/svg_backend.cmxa _obuild/svg_backend/svg_backend.cmxa
+mv src/backends/svg/svg_backend.a _obuild/svg_backend/svg_backend.a
+'/home/aram/.opam/4.02.1/bin/ocamlopt.opt' '-g' '-o' '_obuild/arboviz/arboviz.asm' '-I' './_obuild/arboviz' '-I' './src' '-I' './_obuild/backends' '-I' './src/backends' '-I' './_obuild/svg_backend' '-I' './src/backends/svg' '-I' './_obuild/dot_backend' '-I' './src/backends/dot' '-I' './_obuild/util_backend' '-I' './_obuild/frontends' '-I' './src/frontends' '-I' './_obuild/dot_frontend' '-I' './src/frontends/dot' '-I' './_obuild/arb_frontend' '-I' './src/frontends/arb' '-I' './_obuild/util_frontend' '-I' './_obuild/arboviz_lib' '-g' 'arboviz_lib.cmxa' '-g' 'util_frontend.cmxa' '-g' 'arb_frontend.cmxa' '-g' 'dot_frontend.cmxa' '-g' '-g' 'util_backend.cmxa' '-g' 'dot_backend.cmxa' '-g' 'svg_backend.cmxa' '-g' '_obuild/arboviz/Arboviz.cmx' 
